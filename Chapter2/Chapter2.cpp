@@ -28,7 +28,28 @@ int main()
 
     for (int i = 0; i < 10; i++)
     {
-        cout << i << endl;
+        cout << i;
+    }
+    cout << " " << endl;
+
+    int firstNumber;
+    int secondNumber;
+    cout << "Enter a number: ";   
+    cin >> firstNumber;
+    cout << "You entered " << firstNumber << endl <<"Enter another number: ";  
+    cin >> secondNumber;
+
+    if (firstNumber < secondNumber)
+    {
+        cout << "The first number " << firstNumber << ", is less than the " << secondNumber << endl;
+    }
+    if (firstNumber == secondNumber)
+    {
+        cout << "The first number " << firstNumber << ", is equal to the " << secondNumber << endl;
+    }
+    if (firstNumber > secondNumber)
+    {
+        cout << "The first number " << firstNumber << ", is greater than the " << secondNumber << endl;
     }
 
 
