@@ -20,10 +20,17 @@ int main()
     std::cout << x << std::endl;
 
     int n = 0;
-    cout << "Enter a number:";
+    cout << "Enter a number: ";
     cin >> n;
+    cout << "The double of the number you entered is: " << n * 2 << endl;
 
     cout << "Hoje dia 16 de Abril de 2010 o Sprting ganhou 1-0 ao Farense. Falta pouco para o título!" << endl;
+
+    for (int i = 0; i < 10; i++)
+    {
+        cout << i << endl;
+    }
+
 
     /* try {
          if ((int)n)
