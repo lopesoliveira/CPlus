@@ -6,7 +6,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
-
+#include "Functions.h"
 
 int main()
 {
@@ -16,41 +16,117 @@ int main()
     std::cout << 2.2 << std::endl;
     std::cout << 4 + 2.2 + 3 + 0.8 << std::endl;
 
-    auto x = "joao";
-    std::cout << x << std::endl;
+#pragma region Chapter2
 
-    int n = 0;
-    cout << "Enter a number: ";
-    cin >> n;
-    cout << "The double of the number you entered is: " << n * 2 << endl;
+    //auto x = "joao";
+    //std::cout << x << std::endl;
 
-    cout << "Hoje dia 16 de Abril de 2010 o Sprting ganhou 1-0 ao Farense. Falta pouco para o título!" << endl;
+    //int n = 0;
+    //cout << "Enter a number: ";
+    //cin >> n;
+    //cout << "The double of the number you entered is: " << n * 2 << endl;
 
-    for (int i = 0; i < 10; i++)
+    //cout << "Hoje dia 16 de Abril de 2010 o Sprting ganhou 1-0 ao Farense. Falta pouco para o título!" << endl;
+
+    //for (int i = 0; i < 10; i++)
+    //{
+    //    cout << i;
+    //}
+    //cout << " " << endl;
+
+    //int firstNumber;
+    //int secondNumber;
+    //bool keepgoing = true;
+    //int answer;
+    //while (keepgoing)
+    //{
+    //    cout << "Enter a number: ";
+    //    cin >> firstNumber;
+    //    cout << "You entered " << firstNumber << endl << "Enter another number: ";
+    //    cin >> secondNumber;
+
+    //    if (firstNumber < secondNumber)
+    //    {
+    //        cout << "The first number " << firstNumber << ", is less than the " << secondNumber << endl;
+    //    }
+    //    else
+    //    {
+    //        cout << "The first number " << firstNumber << ", is not less than the " << secondNumber << endl;
+    //    }
+    //    if (firstNumber == secondNumber)
+    //    {
+    //        cout << "The first number " << firstNumber << ", is equal to the " << secondNumber << endl;
+    //    }
+    //    if (firstNumber > secondNumber)
+    //    {
+    //        cout << "The first number " << firstNumber << ", is greater than the " << secondNumber << endl;
+    //    }
+
+    //   /* cout << "Enter 1 to exit or 2 to keep going" << endl;
+    //    cin >> answer;
+    //    if (answer == 1)
+    //        break;*/
+
+    //    cout << "Compare another pair? 0 means no, any other number means yes: ";
+    //    cin >> answer;
+    //    if (answer == 0)
+    //    {
+    //        keepgoing = false;
+    //    }
+
+    //    //--------------------------------- Guess My Number ---------------------------------------------
+    //    int answer=35;
+    //    int guess;
+    //    bool notguessed = true;
+    //    while (notguessed)
+    //    {
+    //        cout << "Type a number to guess it: ";
+    //        cin >> guess;
+    //        if (guess == answer)
+    //        {
+    //            cout << "Congratulations the number you entered " << answer << " is equal to the secret number " << answer;
+    //            notguessed = false;
+    //        }
+    //        if (guess < answer)
+    //        {
+    //            cout << "The number you entered " << guess << " is less than the scret number" << endl;
+    //        }
+    //        if (guess > answer)
+    //        {
+    //            cout << "The number you entered " << answer << " is greater than the scret number" << endl;
+    //        }            
+    //    }
+
+#pragma endregion
+
+        //--------------------------------- overload ---------------------------------------------
+
+    double a = soma(4.2, 5.8);
+    cout << "Primeira soma " << a << endl;
+    double b = soma(5, 4.2, 5.8);
+    cout << "Segunda soma " << b << endl;
+
+    if (test(true))
     {
-        cout << i;
+        cout << "true passes the test " << endl;
     }
-    cout << " " << endl;
+    if (test(3.2))
+    {
+        cout << "3.2 passes the test " << endl;
+    }
+    if (test(-1.2))
+    {
+        cout << "-1.2 passes the test " << endl;
+    }
+    else
+    {
+        cout << "-1.2 DOES NOT PASS THE test" << endl;
+    }
+   
 
-    int firstNumber;
-    int secondNumber;
-    cout << "Enter a number: ";   
-    cin >> firstNumber;
-    cout << "You entered " << firstNumber << endl <<"Enter another number: ";  
-    cin >> secondNumber;
+    return 0;
 
-    if (firstNumber < secondNumber)
-    {
-        cout << "The first number " << firstNumber << ", is less than the " << secondNumber << endl;
-    }
-    if (firstNumber == secondNumber)
-    {
-        cout << "The first number " << firstNumber << ", is equal to the " << secondNumber << endl;
-    }
-    if (firstNumber > secondNumber)
-    {
-        cout << "The first number " << firstNumber << ", is greater than the " << secondNumber << endl;
-    }
+}
 
 
     /* try {
@@ -81,9 +157,9 @@ int main()
       }
       catch (int myNum) {
           cout << "Access denied - You must be at least 18 years old.\n";
-          cout << "Age is: " << myNum;*/
-          //}
-}
+          cout << "Age is: " << myNum;
+          }
+}*/
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
