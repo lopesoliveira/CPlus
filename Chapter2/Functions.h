@@ -6,3 +6,4 @@ bool test(bool x);
 bool test(double x);
 
 int main2();
+int collections();

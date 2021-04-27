@@ -124,7 +124,9 @@ int main()
         cout << "-1.2 DOES NOT PASS THE test" << endl;
     }
 
-    int f = main2();
+    //int f = main2();
+
+    int r = collections();
    
 
     return 0;

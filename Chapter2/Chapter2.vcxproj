@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Chapter2.cpp" />
     <ClCompile Include="Chapter6.cpp" />
+    <ClCompile Include="Chapter6_Collections.cpp" />
     <ClCompile Include="Functions.cpp" />
   </ItemGroup>
   <ItemGroup>
