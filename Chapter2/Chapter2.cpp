@@ -62,10 +62,10 @@ int main()
     //        cout << "The first number " << firstNumber << ", is greater than the " << secondNumber << endl;
     //    }
 
-    //   /* cout << "Enter 1 to exit or 2 to keep going" << endl;
-    //    cin >> answer;
-    //    if (answer == 1)
-    //        break;*/
+    //    /* cout << "Enter 1 to exit or 2 to keep going" << endl;
+    //     cin >> answer;
+    //     if (answer == 1)
+    //         break;*/
 
     //    cout << "Compare another pair? 0 means no, any other number means yes: ";
     //    cin >> answer;
@@ -73,6 +73,7 @@ int main()
     //    {
     //        keepgoing = false;
     //    }
+    //}
 
     //    //--------------------------------- Guess My Number ---------------------------------------------
     //    int answer=35;
@@ -122,6 +123,8 @@ int main()
     {
         cout << "-1.2 DOES NOT PASS THE test" << endl;
     }
+
+    int f = main2();
    
 
     return 0;
