@@ -42,6 +42,7 @@ int collections()
 		words.push_back(s);
 	}
 
+	//ranged for
 	for (auto &item : words)
 	{
 		cout << item << " ";
@@ -54,10 +55,38 @@ int collections()
 	nums[6] = -1;
 	nums[1] = 99;
 
+	cout << endl;
+	//traditional for
 	for (int i = 0; i < nums.size(); i++)
 	{
 		cout << nums[i] << " ";
 	}
+	cout << endl;
+	//or for collections
+	//iterator for
+	cout << "other loop for" << endl;
+	for (auto i = begin(nums); i != end(nums); i++)
+	{
+		cout << *i << " ";
+	}
+	cout << endl;
+
+	sort(begin(words), end(words));
+	for (auto& item : words)
+	{
+		cout << item << " ";
+	}
+	cout << endl;
+
+	//count the how many 3 are in nums
+	int threes = count(begin(nums), end(nums), 3);
+	cout << "there are " << threes << " elements with the value of 3 in the nums collection" << endl;
+
+	int tees = count(begin(words[0]), end(words[0]), 't');
+	cout << "there are " << tees << " 't' in the first word collection" << endl;
+
+
+
 
 
 
