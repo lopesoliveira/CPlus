@@ -1,5 +1,4 @@
 // Chapter2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 using std::cout;
@@ -7,14 +6,19 @@ using std::cin;
 using std::endl;
 using std::string;
 #include "Functions.h"
+#include "Threads.h";
+#include "ThreadsWithMutex.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+#pragma region beginning
+   /* std::cout << "Hello World!\n";
     std::cout << 42 << std::endl;
     std::cout << 2 + 2 << std::endl;
     std::cout << 2.2 << std::endl;
-    std::cout << 4 + 2.2 + 3 + 0.8 << std::endl;
+    std::cout << 4 + 2.2 + 3 + 0.8 << std::endl;*/
+#pragma endregion
 
 #pragma region Chapter2
 
@@ -100,6 +104,7 @@ int main()
 
 #pragma endregion
 
+#pragma region overload
         //--------------------------------- overload ---------------------------------------------
 
     double a = soma(4.2, 5.8);
@@ -123,52 +128,65 @@ int main()
     {
         cout << "-1.2 DOES NOT PASS THE test" << endl;
     }
+#pragma endregion
 
     //int f = main2();
 
-    int r = collections();
-   
+    //int r = collections();
+   /*
+    ExecuteThread(1);
+
+    int random = GetRandom(3);
+    cout << "Result of GetRandom(3) is " << random << " seconds" << "\n";
+    int random2 = GetRandom(1);
+    cout << "Result of GetRandom(1) is " << random2 << " seconds" << "\n";
+    int random3 = GetRandom(100);
+    cout << "Result of GetRandom(100) is " << random3 << " seconds" << "\n";
+    */
+
+    //int t = threads();
+    int m = threadsWithMutex();
 
     return 0;
 
 }
 
 
-    /* try {
-         if ((int)n)
-         {
-             cout << "The number you entered is ";
-             cout << n << endl;
-         }
-         else
-         {
-             throw(n);
-         }
-     }
-     catch (string y)
-     {
-         cout << "You did not enter a numer";
-     }*/
 
+#pragma region Deal with errors try catch
+/* try {
+        if ((int)n)
+        {
+            cout << "The number you entered is ";
+            cout << n << endl;
+        }
+        else
+        {
+            throw(n);
+        }
+    }
+    catch (string y)
+    {
+        cout << "You did not enter a numer";
+    }*/
 
-     /* try {
-          int age = 18;
-          if (age >= 18) {
-              cout << "Access granted - you are old enough.";
-          }
-          else {
-              throw (age);
-          }
-      }
-      catch (int myNum) {
-          cout << "Access denied - You must be at least 18 years old.\n";
-          cout << "Age is: " << myNum;
-          }
+/* try {
+    int age = 18;
+    if (age >= 18) {
+        cout << "Access granted - you are old enough.";
+    }
+    else {
+        throw (age);
+    }
+}
+catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Age is: " << myNum;
+    }
 }*/
+#pragma endregion
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
+#pragma region Tips for getting started
 // Tips for Getting Started: 
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
@@ -176,3 +194,8 @@ int main()
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+#pragma endregion
