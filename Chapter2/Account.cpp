@@ -15,7 +15,7 @@ vector<string> Account::Report()
 
 	report.push_back("Balance is " + to_string(balance));
 	report.push_back("Transactions: ");
-	for (auto  t : log)
+	for (auto  &t : log)
 	{
 		report.push_back(t.Report());
 	}
